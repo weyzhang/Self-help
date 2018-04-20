@@ -1,0 +1,76 @@
+#!/bin/env python
+#-*- coding: utf-8 -*-
+import sys
+from print_style import UseStyle
+from part2 import *
+from help import sunway_help
+from part1 import *
+from part3 import *
+
+
+def main():
+
+    arg = sys.argv[1]
+
+    if arg == "--help":
+        sunway_help()
+ # 1
+    elif arg == "hardware":
+        hardware()
+# 2
+    elif arg == "software":
+        software()
+# 3
+    elif arg == "access":
+        access()
+# 4
+    elif arg == "contact":
+        contact()
+
+# 5
+    elif arg == "queue":
+        queue()
+# 6
+    elif arg == "bsub_sw":
+        bsub_sw()
+# 7
+    elif arg == "bsub_x86":
+        bsub_x86()
+
+# 8
+    elif arg == "compiler_sw":
+        compiler_sw()
+
+# 9
+    elif arg == "compiler_x86":
+        compiler_x86()
+
+# 10
+    elif arg == "job":
+        job()
+# 11
+    elif arg == "download":
+        download()
+# 12
+    elif arg == "memory":
+        memory()
+
+# 13
+    elif arg == "bsub_error":
+        bsub_error()
+# 14
+    elif arg == "run_error":
+        run_error()
+# 15
+    elif arg == "others_error":
+        others_error()
+# 16
+    elif arg == "more":
+        more()
+
+    else:
+        print ("输入错误，请输入 sunway --help，获取帮助")
+
+if __name__ == '__main__':
+
+    main()
